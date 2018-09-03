@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftLesson01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uxC-WU-AQY">
+                                <rect key="frame" x="167" y="60" width="80" height="290"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n77-Cv-mCX">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="42"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="DWq-fx-f02"/>
+                                            <constraint firstAttribute="width" constant="80" id="HOC-ic-ZZU"/>
+                                            <constraint firstAttribute="height" constant="42" id="tem-bh-BPC"/>
+                                        </constraints>
+                                        <state key="normal" title="ボタン１"/>
+                                        <connections>
+                                            <action selector="button1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMf-EF-2e0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4n-pI-sJ5">
+                                        <rect key="frame" x="0.0" y="62" width="80" height="42"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="LoV-v1-hHT"/>
+                                            <constraint firstAttribute="width" constant="80" id="jvM-Ap-KwV"/>
+                                            <constraint firstAttribute="height" constant="42" id="k25-3Z-rtk"/>
+                                        </constraints>
+                                        <state key="normal" title="ボタン２"/>
+                                        <connections>
+                                            <action selector="button2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kbu-NT-RfF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYE-Mo-qyl">
+                                        <rect key="frame" x="0.0" y="124" width="80" height="42"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="C3O-39-cgh"/>
+                                            <constraint firstAttribute="width" constant="80" id="TUv-uQ-nsV"/>
+                                            <constraint firstAttribute="height" constant="42" id="xFM-pI-EIT"/>
+                                        </constraints>
+                                        <state key="normal" title="ボタン３"/>
+                                        <connections>
+                                            <action selector="button3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L7T-Jb-jQh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbV-bo-rHA">
+                                        <rect key="frame" x="0.0" y="186" width="80" height="42"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="9GX-WG-Wwl"/>
+                                            <constraint firstAttribute="height" constant="42" id="Kva-Fs-J25"/>
+                                        </constraints>
+                                        <state key="normal" title="ボタン４"/>
+                                        <connections>
+                                            <action selector="button4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vxn-lm-6Kr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgZ-Fv-14A">
+                                        <rect key="frame" x="0.0" y="248" width="80" height="42"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="Ens-6E-ubA"/>
+                                            <constraint firstAttribute="height" constant="42" id="e7G-Rf-x20"/>
+                                        </constraints>
+                                        <state key="normal" title="ボタン５"/>
+                                        <connections>
+                                            <action selector="button5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dUx-fs-Xyx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhe-LB-ye1">
+                                <rect key="frame" x="107" y="375" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4Iy-nE-0YF"/>
+                                    <constraint firstAttribute="width" constant="200" id="gNz-ay-AxX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uxC-WU-AQY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="BRJ-ni-2MM"/>
+                            <constraint firstItem="yhe-LB-ye1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="irg-R0-TmJ"/>
+                            <constraint firstItem="yhe-LB-ye1" firstAttribute="top" secondItem="uxC-WU-AQY" secondAttribute="bottom" constant="25" id="nse-bB-tA8"/>
+                            <constraint firstItem="uxC-WU-AQY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qfv-ML-gOb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="button5Label" destination="yhe-LB-ye1" id="1Au-t5-idi"/>
+                        <segue destination="0Mn-ba-bmm" kind="presentation" identifier="button4" id="izd-Ef-rIT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="33.733133433283363"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="sFG-6r-rau">
+            <objects>
+                <viewController id="0Mn-ba-bmm" customClass="SecondViewController" customModule="SwiftLesson01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S7k-pM-Ycp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ボタン４が押されました" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORS-3c-SzR">
+                                <rect key="frame" x="57" y="120" width="300" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Lc0-1e-5Al"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCf-qr-Sf7">
+                                <rect key="frame" x="167" y="556" width="80" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Ubj-1F-ibd"/>
+                                </constraints>
+                                <state key="normal" title="閉じる"/>
+                                <connections>
+                                    <action selector="Close:" destination="0Mn-ba-bmm" eventType="touchUpInside" id="Vst-Is-jls"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ORS-3c-SzR" firstAttribute="centerX" secondItem="S7k-pM-Ycp" secondAttribute="centerX" id="670-QJ-WxC"/>
+                            <constraint firstItem="ORS-3c-SzR" firstAttribute="top" secondItem="jfa-6G-iZu" secondAttribute="top" constant="100" id="6kj-6X-HR8"/>
+                            <constraint firstItem="xCf-qr-Sf7" firstAttribute="centerX" secondItem="S7k-pM-Ycp" secondAttribute="centerX" id="L1A-dr-l6e"/>
+                            <constraint firstItem="jfa-6G-iZu" firstAttribute="bottom" secondItem="xCf-qr-Sf7" secondAttribute="bottom" constant="150" id="LFr-Om-T2d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jfa-6G-iZu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="taV-u0-BuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.0000000000001" y="32.608695652173914"/>
+        </scene>
+    </scenes>
+</document>
