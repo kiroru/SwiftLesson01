@@ -14,11 +14,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    @IBAction func Close(_ sender: UIButton) {
+    @IBAction func close(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
     
