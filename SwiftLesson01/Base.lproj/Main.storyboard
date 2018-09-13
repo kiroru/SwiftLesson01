@@ -23,7 +23,6 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n77-Cv-mCX">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="42"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="DWq-fx-f02"/>
                                             <constraint firstAttribute="width" constant="80" id="HOC-ic-ZZU"/>
@@ -36,7 +35,6 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4n-pI-sJ5">
                                         <rect key="frame" x="0.0" y="62" width="80" height="42"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="LoV-v1-hHT"/>
                                             <constraint firstAttribute="width" constant="80" id="jvM-Ap-KwV"/>
@@ -49,7 +47,6 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYE-Mo-qyl">
                                         <rect key="frame" x="0.0" y="124" width="80" height="42"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="C3O-39-cgh"/>
                                             <constraint firstAttribute="width" constant="80" id="TUv-uQ-nsV"/>
@@ -62,7 +59,6 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbV-bo-rHA">
                                         <rect key="frame" x="0.0" y="186" width="80" height="42"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="9GX-WG-Wwl"/>
                                             <constraint firstAttribute="height" constant="42" id="Kva-Fs-J25"/>
@@ -74,7 +70,6 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgZ-Fv-14A">
                                         <rect key="frame" x="0.0" y="248" width="80" height="42"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="Ens-6E-ubA"/>
                                             <constraint firstAttribute="height" constant="42" id="e7G-Rf-x20"/>
@@ -109,7 +104,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="button5Label" destination="yhe-LB-ye1" id="1Au-t5-idi"/>
+                        <outlet property="labelButton5" destination="yhe-LB-ye1" id="1Au-t5-idi"/>
                         <segue destination="0Mn-ba-bmm" kind="presentation" identifier="button4" id="izd-Ef-rIT"/>
                     </connections>
                 </viewController>
@@ -136,13 +131,12 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCf-qr-Sf7">
                                 <rect key="frame" x="167" y="556" width="80" height="30"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="Ubj-1F-ibd"/>
                                 </constraints>
                                 <state key="normal" title="閉じる"/>
                                 <connections>
-                                    <action selector="Close:" destination="0Mn-ba-bmm" eventType="touchUpInside" id="Vst-Is-jls"/>
+                                    <action selector="close:" destination="0Mn-ba-bmm" eventType="touchUpInside" id="pUM-Bb-IxO"/>
                                 </connections>
                             </button>
                         </subviews>
