@@ -25,7 +25,6 @@
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="DWq-fx-f02"/>
-                                            <constraint firstAttribute="width" constant="80" id="HOC-ic-ZZU"/>
                                             <constraint firstAttribute="height" constant="42" id="tem-bh-BPC"/>
                                         </constraints>
                                         <state key="normal" title="ボタン１"/>
@@ -37,7 +36,6 @@
                                         <rect key="frame" x="0.0" y="62" width="80" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="LoV-v1-hHT"/>
-                                            <constraint firstAttribute="width" constant="80" id="jvM-Ap-KwV"/>
                                             <constraint firstAttribute="height" constant="42" id="k25-3Z-rtk"/>
                                         </constraints>
                                         <state key="normal" title="ボタン２"/>
@@ -49,7 +47,6 @@
                                         <rect key="frame" x="0.0" y="124" width="80" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="C3O-39-cgh"/>
-                                            <constraint firstAttribute="width" constant="80" id="TUv-uQ-nsV"/>
                                             <constraint firstAttribute="height" constant="42" id="xFM-pI-EIT"/>
                                         </constraints>
                                         <state key="normal" title="ボタン３"/>
@@ -60,7 +57,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbV-bo-rHA">
                                         <rect key="frame" x="0.0" y="186" width="80" height="42"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="9GX-WG-Wwl"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="JZt-k4-JNc"/>
                                             <constraint firstAttribute="height" constant="42" id="Kva-Fs-J25"/>
                                         </constraints>
                                         <state key="normal" title="ボタン４"/>
@@ -71,7 +68,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgZ-Fv-14A">
                                         <rect key="frame" x="0.0" y="248" width="80" height="42"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="Ens-6E-ubA"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="14S-xL-dYa"/>
                                             <constraint firstAttribute="height" constant="42" id="e7G-Rf-x20"/>
                                         </constraints>
                                         <state key="normal" title="ボタン５"/>
@@ -85,7 +82,7 @@
                                 <rect key="frame" x="107" y="375" width="200" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4Iy-nE-0YF"/>
-                                    <constraint firstAttribute="width" constant="200" id="gNz-ay-AxX"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="xDx-xn-ejl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -121,18 +118,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ボタン４が押されました" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORS-3c-SzR">
-                                <rect key="frame" x="57" y="120" width="300" height="24"/>
+                                <rect key="frame" x="57.333333333333343" y="120" width="300" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="Lc0-1e-5Al"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="KA5-0I-GXt"/>
+                                    <constraint firstAttribute="height" constant="40" id="efm-Ev-3Fq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCf-qr-Sf7">
-                                <rect key="frame" x="167" y="556" width="80" height="30"/>
+                                <rect key="frame" x="167" y="546" width="80" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="Ubj-1F-ibd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="PtP-k9-K4D"/>
+                                    <constraint firstAttribute="height" constant="40" id="evy-ij-7So"/>
                                 </constraints>
                                 <state key="normal" title="閉じる"/>
                                 <connections>
