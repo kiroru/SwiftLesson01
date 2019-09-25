@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uxC-WU-AQY">
-                                <rect key="frame" x="167" y="60" width="80" height="290"/>
+                                <rect key="frame" x="167" y="40" width="80" height="290"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n77-Cv-mCX">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="42"/>
@@ -29,7 +27,7 @@
                                         </constraints>
                                         <state key="normal" title="ボタン１"/>
                                         <connections>
-                                            <action selector="button1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMf-EF-2e0"/>
+                                            <action selector="pressedLogButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMf-EF-2e0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4n-pI-sJ5">
@@ -40,7 +38,7 @@
                                         </constraints>
                                         <state key="normal" title="ボタン２"/>
                                         <connections>
-                                            <action selector="button2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kbu-NT-RfF"/>
+                                            <action selector="pressedAlertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kbu-NT-RfF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYE-Mo-qyl">
@@ -51,7 +49,7 @@
                                         </constraints>
                                         <state key="normal" title="ボタン３"/>
                                         <connections>
-                                            <action selector="button3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L7T-Jb-jQh"/>
+                                            <action selector="pressedActionSheetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L7T-Jb-jQh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbV-bo-rHA">
@@ -62,7 +60,7 @@
                                         </constraints>
                                         <state key="normal" title="ボタン４"/>
                                         <connections>
-                                            <action selector="button4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vxn-lm-6Kr"/>
+                                            <action selector="pressedSegueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vxn-lm-6Kr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgZ-Fv-14A">
@@ -73,13 +71,14 @@
                                         </constraints>
                                         <state key="normal" title="ボタン５"/>
                                         <connections>
-                                            <action selector="button5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dUx-fs-Xyx"/>
+                                            <action selector="pressedEditLabelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dUx-fs-Xyx"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhe-LB-ye1">
-                                <rect key="frame" x="107" y="375" width="200" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhe-LB-ye1">
+                                <rect key="frame" x="107" y="355" width="200" height="40"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4Iy-nE-0YF"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="xDx-xn-ejl"/>
@@ -101,24 +100,24 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="labelButton5" destination="yhe-LB-ye1" id="1Au-t5-idi"/>
+                        <outlet property="textLabel" destination="yhe-LB-ye1" id="1Au-t5-idi"/>
                         <segue destination="0Mn-ba-bmm" kind="presentation" identifier="button4" id="izd-Ef-rIT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37.600000000000001" y="33.733133433283363"/>
+            <point key="canvasLocation" x="-280" y="64"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="sFG-6r-rau">
             <objects>
                 <viewController id="0Mn-ba-bmm" customClass="SecondViewController" customModule="SwiftLesson01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S7k-pM-Ycp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ボタン４が押されました" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORS-3c-SzR">
-                                <rect key="frame" x="57.333333333333343" y="120" width="300" height="40"/>
+                                <rect key="frame" x="57" y="100" width="300" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="KA5-0I-GXt"/>
                                     <constraint firstAttribute="height" constant="40" id="efm-Ev-3Fq"/>
@@ -128,7 +127,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCf-qr-Sf7">
-                                <rect key="frame" x="167" y="546" width="80" height="40"/>
+                                <rect key="frame" x="167" y="526" width="80" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="PtP-k9-K4D"/>
                                     <constraint firstAttribute="height" constant="40" id="evy-ij-7So"/>
@@ -151,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="taV-u0-BuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1000.0000000000001" y="32.608695652173914"/>
+            <point key="canvasLocation" x="877" y="64"/>
         </scene>
     </scenes>
 </document>
