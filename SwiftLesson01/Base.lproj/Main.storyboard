@@ -101,7 +101,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="textLabel" destination="yhe-LB-ye1" id="1Au-t5-idi"/>
-                        <segue destination="0Mn-ba-bmm" kind="presentation" identifier="button4" id="izd-Ef-rIT"/>
+                        <segue destination="0Mn-ba-bmm" kind="presentation" identifier="button4" modalPresentationStyle="fullScreen" id="izd-Ef-rIT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -113,7 +113,7 @@
             <objects>
                 <viewController id="0Mn-ba-bmm" customClass="SecondViewController" customModule="SwiftLesson01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S7k-pM-Ycp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ボタン４が押されました" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORS-3c-SzR">
@@ -127,7 +127,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCf-qr-Sf7">
-                                <rect key="frame" x="167" y="526" width="80" height="40"/>
+                                <rect key="frame" x="167" y="546" width="80" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="PtP-k9-K4D"/>
                                     <constraint firstAttribute="height" constant="40" id="evy-ij-7So"/>
